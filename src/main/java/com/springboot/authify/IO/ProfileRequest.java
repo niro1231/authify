@@ -20,4 +20,5 @@ public class ProfileRequest {
     public String email;
     @Size(min = 6, message = "Password should be at least 6 characters long")
     public String password;
+    public String role;
 }
