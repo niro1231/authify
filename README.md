@@ -36,7 +36,9 @@ Authify is a RESTful API built with Spring Boot that provides a complete user au
     Maven/Gradle for dependency management
 
 🔐 API Endpoints - http://localhost:8080/api/v1.0
+
 Public Endpoints
+
   POST	/register
     {
       "email": "testuser@example.com",
@@ -44,6 +46,7 @@ Public Endpoints
       "role": "USER",
       "password": "password123"
     }
+    
   POST	/login
     {
       "email": "testuser@example.com",
@@ -52,13 +55,16 @@ Public Endpoints
 
 Authenticated Endpoints (USER & ADMIN)
   GET	/profile
+  
   PUT	/profile/updatename	
     {
       "name": "My Updated Name"
     }
 
 Admin Only Endpoints
-  GET	/admin/getallusers	
+
+  GET	/admin/getallusers
+  
   POST	/admin/adduser
     {
       "email": "anotheruser@example.com",
@@ -66,6 +72,7 @@ Admin Only Endpoints
       "role": "USER",
       "password": "password456"
     }
+    
   DELETE	/admin/deleteuser/{userId}
 
 
